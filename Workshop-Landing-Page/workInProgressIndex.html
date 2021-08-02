@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kingsland</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+   
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./lib/datetimepicker-master/build/jquery.datetimepicker.min.css"/>
+    <link href="jquery-sakura.css" rel="stylesheet">
+
+    
+
+   
+   
+    
+
+
+</head>
+
+<body>
+<nav>
+    <div>
+        <img src="images/Kingsland-Logo.png" width="300" alt="kingsland-logo">
+        <button>Enroll</button>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="#">ABOUT US <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">TRAININGS <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">PARTNERS</a></li>
+            <li><a href="#">FORUM</a></li>
+            <li><a href="#">BLOG <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <i class="fas fa-search"></i>
+
+            <img src="images/profile.jpg" alt="profile-photo">
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <section class="education">
+        <article>
+            <div class="box-head">
+                <h3>MY COURSES</h3>
+            </div>
+
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>JS Applications - March 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>Express - March 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total courses: 2
+            </div>
+        </article>
+
+        <article>
+            <div class="box-head">
+                <h3>UPCOMING COURSES</h3>
+            </div>
+
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>JS Applications - March 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>JS Essentials - April 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                    <li>
+                        <span>PB with JS - April 2019</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer">
+                Total courses: 3
+            </div>
+        </article>
+        <article>
+            <div class="box-head">
+                <h3>CONSULTATIONS</h3>
+            </div>
+
+            <div class="box-body">
+                <ul>
+                    <li>
+                        <span>Patrick - 04/25 - 02:50</span>
+                        <i class="fas fa-chevron-circle-right"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-footer" id="totalConsultations">
+                Total consultation: <span>1</span>
+            </div>
+        </article>
+    </section>
+
+    <section class="slider">
+         
+        <h1 style="text-align: center">Open courses and modules</h1>
+      <!-- <div class="container-fluid bg-info"> -->
+        <div class="row" style="text-align: center"> 
+            <div class="col-md-12" style="text-align: center" width="1050px" height="200px" >
+              <h3>Events On Slider<small> ( Click on the buttons or slide to fire any event & Check the console for the output)</small></h3>
+              <script type="text/css">.responsive.slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                responsive: [
+                    {
+                        breakpoint: 1050,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true,
+                        },
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 350,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ],
+            }</script>
+               <div class=".responsive" style="text-align: center" >
+               
+               <div class= "i-container">
+                
+                 <img src="images/djangoprogrammi_thumbnail.png" width="350px" height="200px" alt="django" id="django"  onclick="addCourse('django')" class="card"> 
+                 <img src="images/html-css-fundaments.jpg" width="350px" height="200px" alt="html-css-fundaments" id="css-fundamentals" onclick="addCourse('html-css-fundamentals')"  class="card"> 
+                  <img src="images/programming-fundamentals.png" width="350px" height="200px" alt="programming-fundamentals" id="programming-fundamentals" onclick="addCourse('programming-fundamentals')" class="card" > 
+                  <img src="images/pt-fund.png" width="350px" height="200px" alt="pt-fund" class="card" id="python-fundamentals" onclick="addCourse('python-fundamentals')" class="card" > 
+                </div>
+              
+           <!--  </div> -->
+        </div>
+                
+        </div>     
+        </div>  
+        <div class="col-md-12" style="text-align: center" >      
+                <button id="next">Next</button>
+                <button id="prev">Prev</button>
+            </div>       
+        
+               
+             
+    <!--    </div> -->
+    </section>
+    <section class="lecture-meeting">
+        <h2>
+            Book a meeting with your lecturer
+        </h2>
+        <section class="meeting-main">
+            <form>
+                <p><i class="fas fa-user"></i><input type="text" name="username" id="username" placeholder="Username"/></p>
+                <p>
+                    <i class="fas fa-graduation-cap"></i>
+                   <select style="text-indent: 35px" id="course">
+                        <option value="Django Web Development">Django Web Development</option>
+                        <option value="Html-css-fundamentals">Html-css-fundamentals</option>
+                        <option value="Programming-fundamentals">Programming-fundamentals</option>
+                        <option value="Python">Python</option>
+                    </select> 
+                </p>
+                <p>
+                    <i class="fas fa-male"></i>
+                    <select id="lecturer" style="text-indent: 35px">
+                        <option value="Patrick Golloway">Patrick Golloway </option>
+                        <option value="Anar Mahmen">Anar Mahmen</option>
+                        <option value="Simeon Mandazhiev">Simeon Mandazhiev</option>
+                        <option value="Simeon Katoshki">Simeon Katoshki</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <i class="fas fa-hourglass-start"></i>
+                    <input id="dateTimeInput" class="form-control" type="text" placeholder="YYYY/DD/MM"/>
+                </p>
+            </form>
+            <div style="text-align: center;">
+            <button id="bookHourBtn"
+                ">Send</button>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <section class="about">
+            <header>
+                <h3>KINGSLAND UNIVERSITY</h3>
+            </header>
+            <div class="ul">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Trainers</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Tuition fees</a></li>
+                    <li><a href="#">How to apply</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="initiatives">
+            <header>
+                <h3>ALL INITIATIVES</h3>
+            </header>
+            <ul>
+                <li><a href="#">Kingsland Innovation</a></li>
+                <li><a href="#">Kingsland Coders</a></li>
+                <li><a href="#">Kingsland Job Boards</a></li>
+                <li><a href="#">Kingsland Academy</a></li>
+            </ul>
+        </section>
+
+        <section class="partners">
+            <header>
+                <h3>MAIN PARTNERS</h3>
+            </header>
+            <div class="ul">
+                <ul>
+                    <li><a href="#">Technical Skills Accelarator</a></li>
+                    <li><a href="#">Good Money</a></li>
+                    <li><a href="#">Hosho</a></li>
+                    <li><a href="#">Ngee Ann Polytechnic</a></li>
+                    <li><a href="#">Netki</a></li>
+
+                </ul>
+                <ul>
+                    <li><a href="#">Paybook</a></li>
+                    <li><a href="#">Bitt</a></li>
+                    <li><a href="#">Word Blockchain Forum</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="./css/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./lib/datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
+<script  src="./workInProgress.js" ></script>
+<!-- <script src="/path/to/jquery.min.js"></script>  -->
+<script src="jquery-sakura.min.js"></script>
+<script src="./lib/sakura-master/dist/sakura.js"></script>
+</body>
+
+
+
+
+
+
+
+</html>
